@@ -1,0 +1,38 @@
+:root {
+  --bg-dark: #0F0F1A;
+  --neon-blue: #00F5FF;
+  --cyber-purple: #AA00FF;
+  --accent-green: #00FFA3;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--bg-dark);
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Effect */
+.glass-nav, .glass-footer {
+  background: rgba(15, 15, 26, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon Text */
+.neon-text {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+/* Course Cards */
+.course-card {
+  background: linear-gradient(145deg, rgba(170, 0, 255, 0.1), rgba(0, 245, 255, 0.1));
+  border: 1px solid var(--cyber-purple);
+  transition: transform 0.3s;
+}
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--accent-green);
+}
